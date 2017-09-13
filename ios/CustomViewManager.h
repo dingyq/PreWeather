@@ -6,9 +6,11 @@
 //  Copyright © 2017年 Facebook. All rights reserved.
 //
 
+
+#import <React/RCTView.h>
 #import <React/RCTViewManager.h>
 
-@interface CustomView : UIView
+@interface CustomView : RCTView
 
 @end
 

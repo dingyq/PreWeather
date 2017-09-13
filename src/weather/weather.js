@@ -3,7 +3,7 @@
  */
 
 import NetWork from './../common/network';
-// import NativeMyCustomView from './customview'
+import NativeMyCustomView from './customview'
 
 import React, {Component} from 'react';
 
@@ -50,8 +50,8 @@ export default class DDWeather extends Component {
         // }, (err) => {
         //     alert(err);
         // });
-        // NativeModules.TestPerson.squareMe(this.state.testNum, (num) => {
-        //    alert(num)
+        // NativeModules.TestPerson.squareMe(this.state.testNum, (num, num1) => {
+        //    alert(num+num1)
         // })
 
         NetWork.getWeather({'cityname': '深圳'}, (data) => {

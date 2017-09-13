@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(squareMe:(NSString *)number callback:(RCTResponseSenderBlock)callback) {
   // 平方函数，返回一个整型的平方数
   int num = [number intValue];
-  callback(@[[NSNumber numberWithInt:(num*num)], [NSNull null]]);
+  callback(@[[NSNumber numberWithInt:(num*num)], number, [NSNull null]]);
 }
 
 - (NSInteger)squareMe:(NSString *)number {
